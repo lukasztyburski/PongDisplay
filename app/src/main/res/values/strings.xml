@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Pong Display</string>
+    <string name="brightness_button">WYŚWIETLACZ</string>
+    <string name="time_button">CZAS</string>
+    <string name="date_button">DATA</string>
+    <string name="note_button">NOTATKA</string>
+    <string name="sensors_button">CZUJNIKI</string>
+    <string name="brightness_setup_edit_text">Ustaw jasność wyświetlacza</string>
+    <string name="brightness_0">0%</string>
+    <string name="brightness_25">25%</string>
+    <string name="brightness_50">50%</string>
+    <string name="brightness_75">75%</string>
+    <string name="brightness_100">100%</string>
+    <string name="date_setup_textView">Ustaw datę</string>
+    <string name="date_setup_pattern">DD/MM/RRRR</string>
+    <string name="accept_button">Zatwierdź</string>
+    <string name="time_setup_textView">Ustaw czas</string>
+    <string name="time_pattern">GG:MM</string>
+    <string name="type_note_textView">Wprowadź wiadomość</string>
+    <string name="type_note_hint">Twoja wiadomość</string>
+    <string name="temperature_textView">Temperatura [&#xb0;]</string>
+    <string name="temperature_result_textView">0</string>
+    <string name="humidity_textView">Wilgotność powietrza [%]</string>
+    <string name="humidity_result_textView">0</string>
+    <string name="light_intensity_texView">Natężenie światła [lx]</string>
+    <string name="light_intensity_result_texView">0</string>
+    <string name="refresh_time_textView">Czas od ostatniego wykrycia ruchu [s]</string>
+    <string name="refresh_time_result_textView">0</string>
+    <string name="get_sensors_data_button">Pobierz dane z czujników</string>
+    <string name="wifi_button">Wi-Fi</string>
+</resources>
