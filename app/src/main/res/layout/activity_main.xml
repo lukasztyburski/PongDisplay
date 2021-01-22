@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/accept_note_button2"
+        style="@style/ok_button"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_tv" />
+
+    <Button
+        android:id="@+id/accept_note_button3"
+        style="@style/ok_button"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/background_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/background_tv" />
+
+    <TextView
+        android:id="@+id/background_tv"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/background_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_spinner" />
+
+    <Spinner
+        android:id="@+id/background_spinner"
+        style="@style/spinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_tv" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="0dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ImageView
+        android:id="@+id/ic_thermometer"
+        style="@style/toolbar_icon"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/temperature_description"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:srcCompat="@drawable/thermometer" />
+
+    <ImageView
+        android:id="@+id/ic_raindrop"
+        style="@style/toolbar_icon"
+        android:layout_marginStart="82dp"
+        android:contentDescription="@string/humidity_description"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/ic_thermometer"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:srcCompat="@drawable/raindrop" />
+
+    <ImageView
+        android:id="@+id/ic_lightbulb"
+        style="@style/toolbar_icon"
+        android:layout_marginStart="82dp"
+        android:contentDescription="@string/brightness_description"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/ic_raindrop"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+        app:srcCompat="@drawable/idea" />
+
+    <TextView
+        android:id="@+id/temperature_tv"
+        style="@style/toolbar_tv"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/ic_thermometer"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/humidity_tv"
+        style="@style/toolbar_tv"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@id/ic_raindrop"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/brightness_tv"
+        style="@style/toolbar_tv"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@id/ic_lightbulb"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+
+    <TextView
+        android:id="@+id/text_tv"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_tv" />
+
+    <!--wymiary takie że mieści się ładnie 75 znaków-->
+    <EditText
+        android:id="@+id/note_tv"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_border_color"
+        android:ems="10"
+        android:hint="@string/note_hint"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/accept_note_button"
+        style="@style/ok_button"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/note_tv"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Spinner
+        android:id="@+id/text_spinner"
+        style="@style/spinner"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

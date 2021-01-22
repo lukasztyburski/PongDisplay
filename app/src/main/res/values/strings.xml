@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pong</string>
+    <string name="note_hint">Wprowadź notatkę</string>
+    <string name="text_tv">Tekst</string>
+    <string name="background_tv">Tło</string>
+    <string name="ok_button">Ustaw</string>
+    <string name="humidity_description">raindrop</string>
+    <string name="temperature_description">thermometer</string>
+    <string name="brightness_description">lightbulb</string>
+</resources>
