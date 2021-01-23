@@ -3,8 +3,12 @@
     <string name="note_hint">Wprowadź notatkę</string>
     <string name="text_tv">Tekst</string>
     <string name="background_tv">Tło</string>
+    <string name="display_time_tv">Czas przełączania</string>
     <string name="ok_button">Ustaw</string>
+    <string name="clock_tv">Zegar</string>
+    <string name="clock">GG:MM</string>
     <string name="humidity_description">raindrop</string>
     <string name="temperature_description">thermometer</string>
     <string name="brightness_description">lightbulb</string>
+    <string name="second_unit">s</string>
 </resources>
